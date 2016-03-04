@@ -114,37 +114,11 @@
     <orderEntry type="library" name="Gradle: com.jetbrains:xmlrpc-2.0:14.1.5" level="project" />
     <orderEntry type="library" name="Gradle: com.jetbrains:xpp3-1.1.4-min:14.1.5" level="project" />
     <orderEntry type="library" name="Gradle: com.jetbrains:xstream-1.4.3:14.1.5" level="project" />
-    <orderEntry type="library" name="Gradle: com.jetbrains:android-common:14.1.5" level="project" />
-    <orderEntry type="library" name="Gradle: com.jetbrains:android-rt:14.1.5" level="project" />
-    <orderEntry type="library" name="Gradle: com.jetbrains:android:14.1.5" level="project" />
-    <orderEntry type="library" name="Gradle: com.jetbrains:androidAnnotations:14.1.5" level="project" />
-    <orderEntry type="library" name="Gradle: com.jetbrains:asm-5.0.3:14.1.5" level="project" />
-    <orderEntry type="library" name="Gradle: com.jetbrains:asm-analysis-5.0.3:14.1.5" level="project" />
-    <orderEntry type="library" name="Gradle: com.jetbrains:asm-tree-5.0.3:14.1.5" level="project" />
-    <orderEntry type="library" name="Gradle: com.jetbrains:bcpkix-jdk15on-1.48:14.1.5" level="project" />
-    <orderEntry type="library" name="Gradle: com.jetbrains:bcprov-jdk15on-1.48:14.1.5" level="project" />
-    <orderEntry type="library" name="Gradle: com.jetbrains:builder-model-1.1.0-rc1:14.1.5" level="project" />
-    <orderEntry type="library" name="Gradle: com.jetbrains:common:14.1.5" level="project" />
-    <orderEntry type="library" name="Gradle: com.jetbrains:commons-compress-1.0:14.1.5" level="project" />
-    <orderEntry type="library" name="Gradle: com.jetbrains:freemarker-2.3.20:14.1.5" level="project" />
-    <orderEntry type="library" name="Gradle: com.jetbrains:GoogleFeedback:14.1.5" level="project" />
-    <orderEntry type="library" name="Gradle: com.jetbrains:gson-2.2.4:14.1.5" level="project" />
-    <orderEntry type="library" name="Gradle: com.jetbrains:jarutils:14.1.5" level="project" />
-    <orderEntry type="library" name="Gradle: com.jetbrains:javawriter-2.2.1:14.1.5" level="project" />
-    <orderEntry type="library" name="Gradle: com.jetbrains:kxml2-2.3.0:14.1.5" level="project" />
-    <orderEntry type="library" name="Gradle: com.jetbrains:layoutlib-api:14.1.5" level="project" />
-    <orderEntry type="library" name="Gradle: com.jetbrains:lombok-ast-0.2.3:14.1.5" level="project" />
-    <orderEntry type="library" name="Gradle: com.jetbrains:manifest-merger:14.1.5" level="project" />
-    <orderEntry type="library" name="Gradle: com.jetbrains:mockito-all-1.9.5:14.1.5" level="project" />
-    <orderEntry type="library" name="Gradle: com.jetbrains:sdk-common:14.1.5" level="project" />
-    <orderEntry type="library" name="Gradle: com.jetbrains:sdk-tools:14.1.5" level="project" />
-    <orderEntry type="library" name="Gradle: com.jetbrains:sdklib:14.1.5" level="project" />
     <orderEntry type="library" name="Gradle: org.jetbrains.kotlin:kotlin-runtime:1.0.0" level="project" />
     <orderEntry type="library" scope="RUNTIME" name="Gradle: com.jetbrains:tools:14.1.5" level="project" />
     <orderEntry type="library" scope="TEST" name="Gradle: com.google.truth:truth:0.28" level="project" />
     <orderEntry type="library" scope="TEST" name="Gradle: com.google.guava:guava:18.0" level="project" />
     <orderEntry type="library" scope="TEST" name="Gradle: junit:junit:4.10" level="project" />
     <orderEntry type="library" scope="TEST" name="Gradle: org.hamcrest:hamcrest-core:1.1" level="project" />
-    <orderEntry type="library" name="Gradle: com.jetbrains:resources_en:14.1.5" level="project" />
   </component>
 </module>

@@ -1,5 +1,5 @@
 <idea-plugin version="2">
-    <id>om.github.droibit.plugin.truth.postfix</id>
+    <id>com.github.droibit.plugin.truth.postfix</id>
     <name>Truth Postfix Plugin</name>
     <version>0.1.0</version>
     <vendor email="roomful.rooms@gmail.com" url="https://github.com/droibit">Shinya Kumagai</vendor>
@@ -22,17 +22,25 @@
     <!-- uncomment to enable plugin in all products
     <depends>com.intellij.modules.lang</depends>
     -->
+    <depends>com.intellij.modules.lang</depends>
+    <depends>com.intellij.modules.java</depends>
 
     <extensions defaultExtensionNs="com.intellij">
+        <codeInsight.template.postfixTemplateProvider
+                language="JAVA"
+                implementationClass="com.github.droibit.plugin.truth.postfix.TruthPostfixTemplateProvider" />
     </extensions>
 
     <application-components>
+      <!-- Add your application components here -->
     </application-components>
 
     <project-components>
+      <!-- Add your project components here -->
     </project-components>
 
     <actions>
+      <!-- Add your actions here -->
     </actions>
 
 </idea-plugin>

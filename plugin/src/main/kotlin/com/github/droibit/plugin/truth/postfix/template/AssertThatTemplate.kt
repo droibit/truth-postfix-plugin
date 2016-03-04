@@ -23,6 +23,6 @@ class AssertThatTemplate : StringBasedPostfixTemplate(
     }
 
     override fun getTemplateString(psiElement: PsiElement): String {
-       return "com.google.common.truth.assertThat(assertThat(\$expr\$)\$END\$"
+       return "com.google.common.truth.Truth.assertThat(\$expr\$)\$END\$"
     }
 }

@@ -1,5 +1,6 @@
 package com.github.droibit.plugin.truth.postfix
 
+import com.github.droibit.plugin.truth.postfix.template.AssertAboutTemplate
 import com.github.droibit.plugin.truth.postfix.template.AssertThatTemplate
 import com.github.droibit.plugin.truth.postfix.template.AssertWithMessageTemplate
 import com.intellij.codeInsight.template.postfix.templates.JavaPostfixTemplateProvider
@@ -15,7 +16,8 @@ class TruthPostfixTemplateProvider: JavaPostfixTemplateProvider {
     constructor() {
         templates = hashSetOf(
                 AssertThatTemplate(),
-                AssertWithMessageTemplate()
+                AssertWithMessageTemplate(),
+                AssertAboutTemplate()
         )
     }
 

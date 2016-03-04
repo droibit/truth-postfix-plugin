@@ -1,0 +1,6 @@
+public class Foo {
+  void m() {
+    String msg = "error msg";
+    <spot>msg</spot>$key
+  }
+}

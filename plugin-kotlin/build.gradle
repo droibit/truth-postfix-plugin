@@ -1,0 +1,24 @@
+plugins {
+    id 'org.jetbrains.intellij' version '0.0.43'
+}
+
+apply plugin: 'kotlin'
+
+intellij {
+    version '14.1.5'
+    pluginName 'truth-postfix-plugin-kotlin'
+    updateSinceUntilBuild false
+}
+
+group '0.1.0'
+version 'com.github.droibit'
+
+sourceSets {
+    main.java.srcDirs += 'src/main/kotlin'
+}
+
+dependencies {
+    compile "org.jetbrains.kotlin:kotlin-stdlib:$kotlin_version"
+
+    testCompile "com.google.truth:truth:$truth_version"
+}

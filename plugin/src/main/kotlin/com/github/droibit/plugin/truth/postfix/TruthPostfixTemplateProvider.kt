@@ -1,5 +1,6 @@
 package com.github.droibit.plugin.truth.postfix
 
+import com.github.droibit.plugin.truth.postfix.template.AssertThatTemplate
 import com.intellij.codeInsight.template.postfix.templates.JavaPostfixTemplateProvider
 import com.intellij.codeInsight.template.postfix.templates.PostfixTemplate
 
@@ -8,11 +9,13 @@ import com.intellij.codeInsight.template.postfix.templates.PostfixTemplate
  */
 class TruthPostfixTemplateProvider: JavaPostfixTemplateProvider {
 
-    private val _templates: Set<PostfixTemplate>
+    private val templates: Set<PostfixTemplate>
 
     constructor() {
-        _templates = hashSetOf()
+        templates = hashSetOf(
+                AssertThatTemplate()
+        )
     }
 
-    override fun getTemplates() = _templates
+    override fun getTemplates() = templates
 }

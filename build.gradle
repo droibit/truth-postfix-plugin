@@ -17,10 +17,7 @@ allprojects {
     }
 }
 
-ext {
-    version = '0.1.0'
-    group = 'com.github.droibit'
-}
+
 
 task wrapper(type: Wrapper) {
     gradleVersion = '2.9'

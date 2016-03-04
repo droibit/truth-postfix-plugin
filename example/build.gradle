@@ -6,5 +6,5 @@ group rootProject.ext.group
 version rootProject.ext.version
 
 dependencies {
-    testCompile 'com.google.truth:truth:0.28'
+    testCompile "com.google.truth:truth:$truth_version"
 }

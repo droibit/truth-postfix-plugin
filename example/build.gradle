@@ -1,0 +1,10 @@
+apply plugin: 'java'
+
+sourceCompatibility = 1.8
+
+group rootProject.ext.group
+version rootProject.ext.version
+
+dependencies {
+    testCompile 'com.google.truth:truth:0.28'
+}

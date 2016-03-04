@@ -1,0 +1,38 @@
+<idea-plugin version="2">
+    <id>om.github.droibit.plugin.truth.postfix</id>
+    <name>Truth Postfix Plugin</name>
+    <version>0.1.0</version>
+    <vendor email="roomful.rooms@gmail.com" url="https://github.com/droibit">Shinya Kumagai</vendor>
+
+    <description><![CDATA[
+    ]]></description>
+
+    <change-notes><![CDATA[
+      <ul>
+        <li>0.1.0: Initial release.</li>
+      </ul>
+    ]]>
+    </change-notes>
+
+    <!-- Android Studio 1.3 and Intellij 14.1 -->
+    <idea-version since-build="141.1532"/>
+
+    <!-- please see https://confluence.jetbrains.com/display/IDEADEV/Plugin+Compatibility+with+IntelliJ+Platform+Products
+         on how to target different products -->
+    <!-- uncomment to enable plugin in all products
+    <depends>com.intellij.modules.lang</depends>
+    -->
+
+    <extensions defaultExtensionNs="com.intellij">
+    </extensions>
+
+    <application-components>
+    </application-components>
+
+    <project-components>
+    </project-components>
+
+    <actions>
+    </actions>
+
+</idea-plugin>

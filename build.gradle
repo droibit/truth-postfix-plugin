@@ -1,0 +1,21 @@
+buildscript {
+    ext {
+        kotlin_version = '1.0.0'
+    }
+    repositories {
+        mavenCentral()
+    }
+    dependencies {
+        classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlin_version"
+    }
+}
+
+allprojects {
+    repositories {
+        mavenCentral()
+    }
+}
+
+task wrapper(type: Wrapper) {
+    gradleVersion = '2.9'
+}

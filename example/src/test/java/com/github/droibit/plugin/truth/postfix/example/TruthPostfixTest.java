@@ -15,25 +15,25 @@ import static org.junit.Assert.fail;
 public class TruthPostfixTest {
 
     @Test
-    public void testUsingInt() {
+    public void truthAssertThatWithInt() {
         int actual = 100;
         assertThat(actual).isEqualTo(100);
     }
 
     @Test
-    public void testUsingFloat() {
+    public void truthAssertThatWithFloat() {
         float actual = 100.0f;
         assertThat(actual).isWithin(100.0f);
     }
 
     @Test
-    public void testUsingDouble() {
+    public void truthAssertThatWithDouble() {
         double actual = 100.0;
         assertThat(actual).isWithin(100);
     }
 
     @Test
-    public void testCustomMessage() {
+    public void truthAssertWithMessage() {
         try {
             assertWithMessage("custom msg").that(asList(1, 2, 3)).contains(5);
             fail("Should have thrown.");

@@ -6,6 +6,7 @@ apply plugin: 'kotlin'
 
 intellij {
     version '14.1.5'
+    plugins = 'Kotlin'
     pluginName 'truth-postfix-plugin-kotlin'
     updateSinceUntilBuild false
 }

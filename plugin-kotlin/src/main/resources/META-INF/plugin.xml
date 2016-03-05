@@ -22,13 +22,14 @@
     <!-- uncomment to enable plugin in all products
     <depends>com.intellij.modules.lang</depends>
     -->
+    <depends>org.jetbrains.kotlin</depends>
     <depends>com.intellij.modules.lang</depends>
     <depends>com.intellij.modules.java</depends>
 
     <extensions defaultExtensionNs="com.intellij">
-        <!--<codeInsight.template.postfixTemplateProvider-->
-                <!--language="JAVA"-->
-                <!--implementationClass="com.github.droibit.plugin.truth.postfix.TruthPostfixTemplateProvider" />-->
+        <codeInsight.template.postfixTemplateProvider
+                language="Kotlin"
+                implementationClass="com.github.droibit.plugin.truth.postfix.TruthPostfixTemplateProvider" />
     </extensions>
 
     <application-components>

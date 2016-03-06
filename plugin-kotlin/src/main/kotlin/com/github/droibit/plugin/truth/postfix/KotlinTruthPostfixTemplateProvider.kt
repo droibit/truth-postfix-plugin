@@ -9,7 +9,7 @@ import com.intellij.psi.PsiFile
 /**
  * @author kumagai
  */
-class TruthPostfixTemplateProvider : PostfixTemplateProvider {
+class KotlinTruthPostfixTemplateProvider : PostfixTemplateProvider {
 
     private val templates: Set<PostfixTemplate>
 

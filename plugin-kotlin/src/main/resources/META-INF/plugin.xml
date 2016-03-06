@@ -1,6 +1,6 @@
 <idea-plugin version="2">
     <id>com.github.droibit.plugin.truth.postfix.kotlin</id>
-    <name>Truth Postfix Plugin</name>
+    <name>Truth Postfix Plugin for Kotlin</name>
     <version>0.1.0</version>
     <vendor email="roomful.rooms@gmail.com" url="https://github.com/droibit">Shinya Kumagai</vendor>
 
@@ -19,29 +19,14 @@
 
     <!-- please see https://confluence.jetbrains.com/display/IDEADEV/Plugin+Compatibility+with+IntelliJ+Platform+Products
          on how to target different products -->
-    <!-- uncomment to enable plugin in all products
-    <depends>com.intellij.modules.lang</depends>
-    -->
     <depends>org.jetbrains.kotlin</depends>
     <depends>com.intellij.modules.lang</depends>
     <depends>com.intellij.modules.java</depends>
 
     <extensions defaultExtensionNs="com.intellij">
         <codeInsight.template.postfixTemplateProvider
-                language="Kotlin"
-                implementationClass="com.github.droibit.plugin.truth.postfix.TruthPostfixTemplateProvider" />
+                language="kotlin"
+                implementationClass="com.github.droibit.plugin.truth.postfix.KotlinTruthPostfixTemplateProvider" />
     </extensions>
-
-    <application-components>
-      <!-- Add your application components here -->
-    </application-components>
-
-    <project-components>
-      <!-- Add your project components here -->
-    </project-components>
-
-    <actions>
-      <!-- Add your actions here -->
-    </actions>
 
 </idea-plugin>

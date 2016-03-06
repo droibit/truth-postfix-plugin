@@ -2,8 +2,6 @@ package com.github.droibit.plugin.truth.postfix.example;
 
 import org.junit.Test;
 
-import java.util.Arrays;
-
 import static com.google.common.truth.Truth.assertThat;
 import static com.google.common.truth.Truth.assertWithMessage;
 import static java.util.Arrays.asList;

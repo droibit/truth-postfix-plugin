@@ -1,19 +1,20 @@
 package com.github.droibit.plugin.truth.postfix.template
 
+import com.github.droibit.plugin.truth.postfix.utils.KotlinSelectorConditions.ANY_EXPR
+import com.github.droibit.plugin.truth.postfix.utils.KotlinAncestorSelectors.selectorTopmost
 import com.intellij.codeInsight.template.Template
 import com.intellij.codeInsight.template.Template.Property.USE_STATIC_IMPORT_IF_POSSIBLE
 import com.intellij.codeInsight.template.TemplateManager
 import com.intellij.codeInsight.template.postfix.templates.StringBasedPostfixTemplate
-import com.intellij.codeInsight.template.postfix.util.JavaPostfixTemplatesUtils.*
 import com.intellij.psi.PsiElement
 
 /**
  * @author kumagai
  */
-class AssertThatTemplate : StringBasedPostfixTemplate(
+class KotlinAssertThatTemplate : StringBasedPostfixTemplate(
         "assertThat",
         "assertThat(expr)",
-        selectorTopmost(IS_NON_VOID)) {
+        selectorTopmost(ANY_EXPR)) {
 
     // Ref: https://goo.gl/jpjA7w
     override fun getElementToRemove(expr: PsiElement) = expr

@@ -1,6 +1,6 @@
 package com.github.droibit.plugin.truth.postfix
 
-import com.github.droibit.plugin.truth.postfix.template.AssertThatTemplate
+import com.github.droibit.plugin.truth.postfix.template.KotlinAssertThatTemplate
 import com.intellij.codeInsight.template.postfix.templates.PostfixTemplate
 import com.intellij.codeInsight.template.postfix.templates.PostfixTemplateProvider
 import com.intellij.openapi.editor.Editor
@@ -15,7 +15,7 @@ class KotlinTruthPostfixTemplateProvider : PostfixTemplateProvider {
 
     constructor() {
         templates = hashSetOf(
-                AssertThatTemplate()
+                KotlinAssertThatTemplate()
         )
     }
 

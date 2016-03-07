@@ -1,0 +1,5 @@
+class Foo {
+  fun m(f: SubjectFactory<FooSubject, Foo>) {
+    assertAbout(f).that(target)
+  }
+}

@@ -12,10 +12,22 @@ import static org.junit.Assert.fail;
  */
 public class TruthPostfixTest {
 
+    private int field = 1;
+
     @Test
     public void truthAssertThatWithInt() {
         int actual = 100;
         assertThat(actual).isEqualTo(100);
+    }
+
+    @Test
+    public void truthAssertThatWithIntField() {
+        assertThat(field).isEqualTo(1);
+    }
+
+    @Test
+    public void truthAssertThatWithIntLiteral() {
+        assertThat(100).isEqualTo(100);
     }
 
     @Test
@@ -28,6 +40,12 @@ public class TruthPostfixTest {
     public void truthAssertThatWithDouble() {
         double actual = 100.0;
         assertThat(actual).isWithin(100);
+    }
+
+    @Test
+    public void truthAssertThatWithStringMethod() {
+        String actual = "hoge";
+        assertThat(actual.isEmpty()).isFalse();
     }
 
     @Test

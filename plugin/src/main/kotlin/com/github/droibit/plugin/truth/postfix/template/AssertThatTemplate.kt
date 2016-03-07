@@ -17,7 +17,6 @@ class AssertThatTemplate : StringBasedPostfixTemplate(
 
     override fun createTemplate(manager: TemplateManager, templateString: String): Template {
         return super.createTemplate(manager, templateString).apply {
-            isToReformat = shouldReformat()
             setValue(USE_STATIC_IMPORT_IF_POSSIBLE, true)
         }
     }

@@ -13,6 +13,9 @@ intellij {
 group '0.1.0'
 version 'com.github.droibit'
 
+sourceCompatibility = 1.6
+targetCompatibility = 1.6
+
 sourceSets {
     main.java.srcDirs += 'src/main/kotlin'
 }

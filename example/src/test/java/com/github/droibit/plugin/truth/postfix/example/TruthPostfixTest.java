@@ -1,5 +1,7 @@
 package com.github.droibit.plugin.truth.postfix.example;
 
+import com.github.droibit.plugin.truth.postfix.example.delegation.Foo;
+
 import org.junit.Test;
 
 import static com.google.common.truth.Truth.assertThat;
@@ -56,5 +58,11 @@ public class TruthPostfixTest {
         } catch (AssertionError e) {
             assertThat(e).hasMessage("custom msg: <[1, 2, 3]> should have contained <5>");
         }
+    }
+
+    @Test
+    public void assertThatWithDefinedClass() {
+        Foo foo = new Foo(100);
+        assertThat(foo).isNotNull();
     }
 }

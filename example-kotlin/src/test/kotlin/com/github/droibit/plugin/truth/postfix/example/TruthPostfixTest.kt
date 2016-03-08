@@ -43,4 +43,11 @@ class TruthPostfixTest {
         val actual = "hoge"
         assertThat(actual.isNotEmpty()).isTrue()
     }
+
+    @Test
+    fun assertThatWithDefinedClass() {
+        class Foo(val value: Int)
+        val foo = Foo(value = 100)
+        assertThat(foo).isNotNull()
+    }
 }

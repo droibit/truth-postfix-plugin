@@ -6,7 +6,6 @@ import com.intellij.openapi.util.Condition
 import com.intellij.openapi.util.Conditions
 import com.intellij.psi.PsiElement
 import org.jetbrains.kotlin.psi.KtExpression
-import org.jetbrains.kotlin.psi.KtPsiUtil
 
 /**
  *  * [AncestorSelector.scala](https://goo.gl/2c7ZJl)
@@ -19,7 +18,7 @@ internal object KotlinAncestorSelectors {
         override fun getFilters(offset: Int) = Conditions.and(super.getFilters(offset), psiErrorFilter)
 
         override fun getNonFilteredExpressions(context: PsiElement, document: Document, offset: Int): List<PsiElement> {
-            val element = parentOfType(context, KtExpression::class.java)
+            val element = context.parentOfType(KtExpression::class.java)
             return when (element) {
                 is KtExpression -> {
                     val result = arrayListOf(element)
@@ -39,18 +38,20 @@ internal object KotlinAncestorSelectors {
     }
 }
 
-private fun parentOfType(element: PsiElement, vararg classes: Class<out PsiElement>): PsiElement {
-    var current = element
-    while (current != null && classes.find { it.isInstance(current) } == null) {
-        current = current.parent
-    }
-    return current
-}
-
 /**
  * [SelectorConditions.scala](https://goo.gl/Rf8Qp9)
  */
 internal object KotlinSelectorConditions {
 
-    val ANY_EXPR = Condition<PsiElement> { it is KtExpression }
+    val ANY_EXPR = Condition<PsiElement> {
+        it is KtExpression
+    }
+}
+
+private fun PsiElement.parentOfType(vararg classes: Class<out PsiElement>): PsiElement {
+    var current = this
+    while (current != null && classes.find { it.isInstance(current) } == null) {
+        current = current.parent
+    }
+    return current
 }

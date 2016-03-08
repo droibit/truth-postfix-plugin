@@ -40,6 +40,7 @@ internal object KotlinAncestorSelectors {
 
 /**
  * [SelectorConditions.scala](https://goo.gl/Rf8Qp9)
+ * [ScExpression.scala](https://goo.gl/a8EUD9)
  */
 internal object KotlinSelectorConditions {
 

@@ -15,35 +15,35 @@ public class TruthPostfixTest {
     private int field = 1;
 
     @Test
-    public void truthAssertThatWithInt() {
+    public void assertThatWithInt() {
         int actual = 100;
         assertThat(actual).isEqualTo(100);
     }
 
     @Test
-    public void truthAssertThatWithIntField() {
+    public void assertThatWithIntField() {
         assertThat(field).isEqualTo(1);
     }
 
     @Test
-    public void truthAssertThatWithIntLiteral() {
+    public void assertThatWithIntLiteral() {
         assertThat(100).isEqualTo(100);
     }
 
     @Test
-    public void truthAssertThatWithFloat() {
+    public void assertThatWithFloat() {
         float actual = 100.0f;
         assertThat(actual).isWithin(100.0f);
     }
 
     @Test
-    public void truthAssertThatWithDouble() {
+    public void assertThatWithDouble() {
         double actual = 100.0;
         assertThat(actual).isWithin(100);
     }
 
     @Test
-    public void truthAssertThatWithStringMethod() {
+    public void assertThatWithStringMethod() {
         String actual = "hoge";
         assertThat(actual.isEmpty()).isFalse();
     }

@@ -1,5 +1,0 @@
-class Foo {
-  fun m(f: SubjectFactory<FooSubject, Foo>) {
-    <spot>f</spot>$key
-  }
-}

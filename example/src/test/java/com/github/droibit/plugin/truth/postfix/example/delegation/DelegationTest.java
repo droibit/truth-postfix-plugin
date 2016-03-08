@@ -11,7 +11,7 @@ import static com.google.common.truth.Truth.assertAbout;
 public class DelegationTest {
 
     @Test
-    public void truthAssertAbout() {
+    public void assertAboutWithFoo() {
         assertAbout(foo()).that(new Foo(5)).matches(new Foo(5));
     }
 }

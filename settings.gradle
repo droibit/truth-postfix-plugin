@@ -1,1 +1,1 @@
-include ':plugin', ':plugin-kotlin'
+include ':plugin'

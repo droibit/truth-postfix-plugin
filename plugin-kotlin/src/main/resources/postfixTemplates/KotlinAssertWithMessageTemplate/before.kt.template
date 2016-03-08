@@ -1,6 +1,0 @@
-class Foo {
-  fun m() {
-    val msg = "error msg";
-    <spot>msg</spot>$key
-  }
-}

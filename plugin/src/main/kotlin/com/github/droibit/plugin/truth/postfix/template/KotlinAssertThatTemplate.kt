@@ -2,8 +2,9 @@ package com.github.droibit.plugin.truth.postfix.template
 
 import com.github.droibit.plugin.truth.postfix.template.selector.KotlinAncestorSelectors.selectorTopmost
 import com.github.droibit.plugin.truth.postfix.template.selector.KotlinSelectorConditions.ANY_EXPR
+import com.github.droibit.plugin.truth.postfix.utils.TRUTH_CLASS_NAME
+import com.github.droibit.plugin.truth.postfix.utils.getTemplateStringIfWithinTestModule
 import com.intellij.codeInsight.template.Template
-import com.intellij.codeInsight.template.Template.Property.USE_STATIC_IMPORT_IF_POSSIBLE
 import com.intellij.codeInsight.template.TemplateManager
 import com.intellij.codeInsight.template.postfix.templates.StringBasedPostfixTemplate
 import com.intellij.psi.PsiElement
@@ -22,11 +23,11 @@ class KotlinAssertThatTemplate : StringBasedPostfixTemplate(
     override fun createTemplate(manager: TemplateManager, templateString: String): Template {
         return super.createTemplate(manager, templateString).apply {
             isToReformat = shouldReformat()
-            setValue(USE_STATIC_IMPORT_IF_POSSIBLE, true)
         }
     }
 
-    override fun getTemplateString(psiElement: PsiElement): String {
-       return "com.google.common.truth.Truth.assertThat(\$expr\$)\$END\$"
+    override fun getTemplateString(psiElement: PsiElement): String? {
+        return getTemplateStringIfWithinTestModule(element = psiElement,
+                                                   template = "$TRUTH_CLASS_NAME.assertThat(\$expr\$)\$END\$")
     }
 }

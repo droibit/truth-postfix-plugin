@@ -1,5 +1,7 @@
 package com.github.droibit.plugin.truth.postfix.template
 
+import com.github.droibit.plugin.truth.postfix.utils.TRUTH_CLASS_NAME
+import com.github.droibit.plugin.truth.postfix.utils.getTemplateStringIfWithinTestModule
 import com.intellij.codeInsight.template.Template
 import com.intellij.codeInsight.template.Template.Property.USE_STATIC_IMPORT_IF_POSSIBLE
 import com.intellij.codeInsight.template.TemplateManager
@@ -22,7 +24,8 @@ class AssertThatTemplate : StringBasedPostfixTemplate(
         }
     }
 
-    override fun getTemplateString(psiElement: PsiElement): String {
-       return "com.google.common.truth.Truth.assertThat(\$expr\$)\$END\$"
+    override fun getTemplateString(psiElement: PsiElement): String? {
+        return getTemplateStringIfWithinTestModule(element = psiElement,
+                                                   template = "$TRUTH_CLASS_NAME.assertThat(\$expr\$)\$END\$")
     }
 }

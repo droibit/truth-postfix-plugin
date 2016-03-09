@@ -1,4 +1,4 @@
-package com.github.droibit.plugin.truth.postfix.utils
+package com.github.droibit.plugin.truth.postfix.template.selector
 
 import com.intellij.codeInsight.template.postfix.templates.PostfixTemplateExpressionSelectorBase
 import com.intellij.openapi.editor.Document
@@ -13,6 +13,7 @@ import org.jetbrains.kotlin.psi.KtExpression
  */
 internal object KotlinAncestorSelectors {
 
+    @JvmStatic
     fun selectorTopmost(condition: Condition<PsiElement>) = object: PostfixTemplateExpressionSelectorBase(condition) {
 
         override fun getFilters(offset: Int) = Conditions.and(super.getFilters(offset), psiErrorFilter)
@@ -44,6 +45,7 @@ internal object KotlinAncestorSelectors {
  */
 internal object KotlinSelectorConditions {
 
+    @JvmField
     val ANY_EXPR = Condition<PsiElement> {
         it is KtExpression
     }

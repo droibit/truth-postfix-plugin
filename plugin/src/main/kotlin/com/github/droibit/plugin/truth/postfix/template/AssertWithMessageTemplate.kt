@@ -1,6 +1,6 @@
 package com.github.droibit.plugin.truth.postfix.template
 
-import com.github.droibit.plugin.truth.postfix.utils.JavaSelectorConditions.IS_CHAR_SEQUENCE
+import com.github.droibit.plugin.truth.postfix.template.selector.JavaSelectorConditions.IS_CHAR_SEQUENCE
 import com.intellij.codeInsight.template.Template
 import com.intellij.codeInsight.template.TemplateManager
 import com.intellij.codeInsight.template.postfix.templates.StringBasedPostfixTemplate

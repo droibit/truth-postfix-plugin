@@ -11,8 +11,8 @@ intellij {
     updateSinceUntilBuild false
 }
 
-group '0.1.0'
-version 'com.github.droibit'
+group 'com.github.droibit'
+version '0.1.0'
 
 sourceCompatibility = 1.6
 targetCompatibility = 1.6

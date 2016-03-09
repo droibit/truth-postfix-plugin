@@ -1,7 +1,7 @@
 package com.github.droibit.plugin.truth.postfix.template
 
-import com.github.droibit.plugin.truth.postfix.utils.KotlinSelectorConditions.ANY_EXPR
-import com.github.droibit.plugin.truth.postfix.utils.KotlinAncestorSelectors.selectorTopmost
+import com.github.droibit.plugin.truth.postfix.template.selector.KotlinAncestorSelectors.selectorTopmost
+import com.github.droibit.plugin.truth.postfix.template.selector.KotlinSelectorConditions.ANY_EXPR
 import com.intellij.codeInsight.template.Template
 import com.intellij.codeInsight.template.Template.Property.USE_STATIC_IMPORT_IF_POSSIBLE
 import com.intellij.codeInsight.template.TemplateManager

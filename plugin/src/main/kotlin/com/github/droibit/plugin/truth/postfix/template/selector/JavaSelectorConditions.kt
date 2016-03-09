@@ -1,4 +1,4 @@
-package com.github.droibit.plugin.truth.postfix.utils
+package com.github.droibit.plugin.truth.postfix.template.selector
 
 import com.intellij.openapi.util.Condition
 import com.intellij.psi.PsiElement
@@ -11,11 +11,13 @@ object JavaSelectorConditions {
     private val JAVA_LANG_CHAR_SEQUENCE = "java.lang.CharSequence"
     private val TRUTH_SUBJECT_FACTORY = "com.google.common.truth.SubjectFactory"
 
+    @JvmField
     internal val IS_CHAR_SEQUENCE = Condition<PsiElement> { e ->
         InheritanceUtil.isInheritor(e.type, JAVA_LANG_CHAR_SEQUENCE)
     }
 
-    internal val IS_SUBJECT_FACTORY = Condition<PsiElement> {e ->
+    @JvmField
+    internal val IS_SUBJECT_FACTORY = Condition<PsiElement> { e ->
         InheritanceUtil.isInheritor(e.type, TRUTH_SUBJECT_FACTORY)
     }
 }

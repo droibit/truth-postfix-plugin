@@ -4,7 +4,8 @@ import com.intellij.codeInsight.template.Template
 import com.intellij.codeInsight.template.Template.Property.USE_STATIC_IMPORT_IF_POSSIBLE
 import com.intellij.codeInsight.template.TemplateManager
 import com.intellij.codeInsight.template.postfix.templates.StringBasedPostfixTemplate
-import com.intellij.codeInsight.template.postfix.util.JavaPostfixTemplatesUtils.*
+import com.intellij.codeInsight.template.postfix.util.JavaPostfixTemplatesUtils.IS_NON_VOID
+import com.intellij.codeInsight.template.postfix.util.JavaPostfixTemplatesUtils.selectorTopmost
 import com.intellij.psi.PsiElement
 
 /**

@@ -1,0 +1,11 @@
+language: java
+jdk: openjdk6
+
+env:
+  global:
+    - GRADLE_OPTS="-Xmx512m -XX:MaxPermSize=512m"
+
+notifications:
+  email: false
+
+sudo: false

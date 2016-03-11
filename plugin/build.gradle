@@ -9,10 +9,17 @@ intellij {
     plugins = ['Kotlin']
     pluginName 'truth-postfix-plugin'
     updateSinceUntilBuild false
+
+    publish {
+        pluginId '8249'
+        // set values in ~/.gradle/gradle.properties.
+        password project.properties['intellij.publish.password']
+        username project.properties['intellij.publish.username']
+    }
 }
 
 group 'com.github.droibit'
-version '0.1.0'
+version '0.1.1'
 
 sourceCompatibility = 1.6
 targetCompatibility = 1.6

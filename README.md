@@ -1,7 +1,7 @@
 # Turth Postfix Completion Plugin
 [![Build Status](https://travis-ci.org/droibit/truth-postfix-plugin.svg?branch=develop)](https://travis-ci.org/droibit/truth-postfix-plugin)
 
-This Plugin for [Google truth](https://github.com/google/truth) to use *Postfix Completion* in IntelliJ Idea/Android Studio.  
+This Plugin for [Google Truth](https://github.com/google/truth) to use *Postfix Completion* in IntelliJ Idea/Android Studio.  
 Available in Java and Kotlin (limited support).
 
 ## Support
@@ -33,7 +33,11 @@ If you want to use `assertThat`, manually run method import.
 
 This plugin is dependent on the [Kotlin Plugin](https://plugins.jetbrains.com/plugin/6954?pr=idea), please install first.
 
-TODO:
+* From plugin repository  
+   `Preferences  > Plugins > Browse Repositories > Install` then restart IDE.
+* Manually  
+   Download plugin from [plugins.jetbrains.com](https://plugins.jetbrains.com/plugin/8249?pr=) or [GitHub Release](https://github.com/droibit/truth-postfix-plugin/releases).  
+   `Preferences  > Plugins > Install plugin from disk` then restart IDE.        
 
 ## License
 

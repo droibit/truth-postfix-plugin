@@ -1,7 +1,7 @@
 <idea-plugin version="2">
     <id>com.github.droibit.plugin.truth.postfix</id>
-    <name>Truth Postfix Plugin for Kotlin</name>
-    <version>0.1.0</version>
+    <name>Truth Postfix Plugin</name>
+    <version>0.1.1</version>
     <vendor email="roomful.rooms@gmail.com" url="https://github.com/droibit">Shinya Kumagai</vendor>
 
     <description><![CDATA[
@@ -18,11 +18,15 @@
               Creates assertion from actual.<br/>
               <em>assertThat(actual)</em>
             </li>
+          </ul>
+          <ul>
             <li>
               <b>.assertWithMessage</b><br/>
               Creates assertion using custom message.<br/>
               <em>assertWithMessage(message)</em>
             </li>
+          </ul>
+          <ul>
             <li>
               <b>.assertAbout</b><br/>
               Creates assertion from custom subject.<br/>
@@ -30,9 +34,8 @@
             </li>
           </ul>
         </p>
-
         <p>
-            <b>Kotlin</b>
+          <b>Kotlin</b>
             <ul>
               <li>
                 <b>.assertThat</b><br/>
@@ -47,6 +50,7 @@
 
     <change-notes><![CDATA[
       <ul>
+        <li>0.1.1: Changed plugin name.</li>
         <li>0.1.0: Initial release.</li>
       </ul>
     ]]>

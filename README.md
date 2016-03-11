@@ -18,8 +18,8 @@ Available in Java and Kotlin (limited support).
 |Postfix Expression|Description|Example|
 |------------------|-----------|-------|
 |.assertThat|Creates assertion from actual.|assertThat(actual)|
-|.assertAbout|Creates assertion from custom subject|assertAbout(subjectFactory).that(actual)|
 |.assertWithMessage|Creates assertion using custom message.|assertWithMessage(message)|
+|.assertAbout|Creates assertion from custom subject|assertAbout(subjectFactory).that(actual)|
 
 ### Kotlin
 

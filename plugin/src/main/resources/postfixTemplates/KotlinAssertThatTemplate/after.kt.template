@@ -1,0 +1,6 @@
+class Foo {
+  fun m() {
+    val actual = 1
+    Truth.assertThat(actual)
+  }
+}

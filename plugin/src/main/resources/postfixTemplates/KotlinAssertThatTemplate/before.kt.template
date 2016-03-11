@@ -1,0 +1,7 @@
+class Foo {
+  fun m() {
+    val actual = 1
+    <spot>actual</spot>$key
+  }
+}
+

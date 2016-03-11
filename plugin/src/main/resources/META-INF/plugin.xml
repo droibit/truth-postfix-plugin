@@ -5,6 +5,44 @@
     <vendor email="roomful.rooms@gmail.com" url="https://github.com/droibit">Shinya Kumagai</vendor>
 
     <description><![CDATA[
+      This Plugin for Google truth to use Postfix Completion in IntelliJ Idea/Android Studio.<br/>
+      Available in Java and Kotlin (limited support).<br/>
+      <br/>
+      <p>
+        Available templates:<br/>
+        <p>
+          <b>Java</b>
+          <ul>
+            <li>
+              <b>.assertThat</b><br/>
+              Creates assertion from actual.<br/>
+              <em>assertThat(actual)</em>
+            </li>
+            <li>
+              <b>.assertWithMessage</b><br/>
+              Creates assertion using custom message.<br/>
+              <em>assertWithMessage(message)</em>
+            </li>
+            <li>
+              <b>.assertAbout</b><br/>
+              Creates assertion from custom subject.<br/>
+              <em>assertAbout(subjectFactory).that(actual)</em>
+            </li>
+          </ul>
+        </p>
+
+        <p>
+            <b>Kotlin</b>
+            <ul>
+              <li>
+                <b>.assertThat</b><br/>
+                Creates assertion from actual.<br/>
+                <em>Truth.assertThat(actual)</em>
+              </li>
+            </ul>
+            If you want to use assertThat, manually run method import.
+        </p>
+      </p>
     ]]></description>
 
     <change-notes><![CDATA[
